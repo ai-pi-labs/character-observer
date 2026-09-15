@@ -1,4 +1,24 @@
-# Character Observer｜角色观察机位摄影提示词
+<p align="center">
+  <img src="docs/assets/aipi-banner.svg" alt="AIπ｜AI圆周派 · Character Observer" width="100%">
+</p>
+
+<h1 align="center">Character Observer</h1>
+
+<p align="center"><strong>一个角色，十九种观察视角。</strong><br>One character. Nineteen ways to see.</p>
+
+<p align="center">
+  <img src="docs/assets/modes-badge.svg" alt="19 种观察模式">
+  <img src="docs/assets/prompts-badge.svg" alt="每次 1–20 条提示词">
+</p>
+
+<p align="center"><strong>简体中文</strong> · <a href="README.en.md">English</a></p>
+
+<p align="center">
+  <a href="#start">快速开始与安装</a> ·
+  <a href="references/mode-examples.md">19 种模式案例</a> ·
+  <a href="#usage">调用方式</a> ·
+  <a href="SKILL.md">技能母版</a>
+</p>
 
 输入一个成年虚构角色，生成监控、手机随拍、长焦、反射、建筑框景等 **19 种观察视角**的摄影提示词。一次支持 **1–20 条**，自动变化场景、动作和构图，并保持角色识别特征。
 
@@ -7,7 +27,9 @@
 - [完整母版：SKILL.md](SKILL.md)
 - [19 种模式：逐个调用示例 + 可直接生图的完整提示词](references/mode-examples.md)
 
-## 1. 怎么开始
+<a id="start"></a>
+
+## 快速开始与安装
 
 ### 方法 A：直接复制母版，不安装
 
@@ -30,7 +52,7 @@ mode=reflection n=3 scene=雨后商业街
 可以直接对 Codex 说：
 
 ```text
-使用 $skill-installer，把 https://github.com/EthanYu-YW/character-observer
+使用 $skill-installer，把 https://github.com/ai-pi-labs/character-observer
 仓库根目录的 Skill 安装到我的本地环境，保留 references 文件夹。
 ```
 
@@ -46,7 +68,9 @@ mode=reflection n=3 scene=雨后商业街
 
 Codex 支持个人目录 `~/.agents/skills` 和项目目录 `.agents/skills`；新技能未出现时可重启 Codex。在 Codex CLI 或 IDE 扩展中，可用 `$` 提及技能。安装目录与调用方式参考 [OpenAI 官方 Skills 文档](https://learn.chatgpt.com/docs/build-skills)。
 
-## 2. 第一次调用：复制这一条
+<a id="usage"></a>
+
+## 第一次调用
 
 在已加载本 Skill 的对话中发送：
 
@@ -65,7 +89,10 @@ mode=smartphone n=1 scene=咖啡店门外
 地点在咖啡店门外，衣服保持一致，动作和构图各不相同，只要提示词。
 ```
 
-## 3. 常见用法
+## 常见用法
+
+<details>
+<summary>展开 7 种调用方式：批量、多视角、发现镜头与连续动作</summary>
 
 ### 同一种视角，生成五条不同画面
 
@@ -132,9 +159,14 @@ time=傍晚 weather=雨后 ar=16:9 texture=balanced
 discovered=off 只要提示词
 ```
 
-## 4. 十九种 mode 怎么选
+</details>
+
+## 十九种 mode 怎么选
 
 将表格最后一列放在角色描述之后即可，例如：`$character-observer 28岁原创成年城市旅人 mode=cctv n=1`。每种模式的完整生图案例都在 [案例文档](references/mode-examples.md)，按相同顺序排列。
+
+<details>
+<summary>展开全部 19 种模式与最简参数</summary>
 
 | mode | 视觉效果 / 适用画面 | 最简参数 |
 |---|---|---|
@@ -158,7 +190,12 @@ discovered=off 只要提示词
 | `public-transit` | 扶手、门框与车厢层次 | `mode=public-transit n=1` |
 | `low-angle-public` | 公共空间低机位环境肖像 | `mode=low-angle-public n=1` |
 
-## 5. 参数速查
+</details>
+
+## 参数速查
+
+<details>
+<summary>展开角色、镜头、连续性与网格参数</summary>
 
 | 参数 | 默认值 | 如何使用 |
 |---|---|---|
@@ -181,7 +218,12 @@ discovered=off 只要提示词
 
 完整默认值、冲突处理与模式视觉规格见 [SKILL.md](SKILL.md)。这些参数是提供给助手的文本约定，不是可在终端执行的命令行参数。
 
-## 6. 常见问题
+</details>
+
+## 常见问题
+
+<details>
+<summary>展开数量、角色一致性、生图与安装问题</summary>
 
 **`n=6` 是生成六张图片吗？**
 
@@ -207,6 +249,8 @@ discovered=off 只要提示词
 
 检查 `character-observer/SKILL.md` 是否直接位于 Skills 目录下，避免多套一层下载文件夹；再重启 Codex。也可以先用上面的“方法 A”直接提供母版文本。
 
-## 7. 使用范围
+</details>
+
+## 使用范围
 
 仅用于明确成年、成年外观的虚构角色或成年演员知情摆拍，完整着装，在公开或获准拍摄的半公开空间中创作。不用于真实人物隐私侵犯、真实非自愿偷拍、未成年人、浴室/厕所/更衣室/卧室偷窥，或性化隐藏摄像头角度。监控、新闻、发现镜头等效果均为虚构视觉语言。
