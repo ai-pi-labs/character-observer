@@ -15,6 +15,7 @@
 
 <p align="center">
   <a href="#start">快速开始与安装</a> ·
+  <a href="#generated-examples">实测样图</a> ·
   <a href="references/mode-examples.md">19 种模式案例</a> ·
   <a href="#usage">调用方式</a> ·
   <a href="SKILL.md">技能母版</a>
@@ -26,6 +27,23 @@
 
 - [完整母版：SKILL.md](SKILL.md)
 - [19 种模式：逐个调用示例 + 可直接生图的完整提示词](references/mode-examples.md)
+
+<a id="generated-examples"></a>
+
+## 实际生成样图
+
+以同一位 28 岁原创成年角色，分别生成手机随拍、橱窗反射和建筑框景。后两张实际使用首张作为角色参考；三图均由内置图像工具实际生成。
+
+<table>
+  <tr><th>手机随拍</th><th>橱窗反射</th><th>建筑框景</th></tr>
+  <tr>
+    <td width="33%"><a href="examples/verified-20260915/01-smartphone.png"><img src="examples/verified-20260915/01-smartphone.png" alt="原创成年角色在咖啡店门外接杯的实际生成样图" width="100%"></a></td>
+    <td width="33%"><a href="examples/verified-20260915/02-reflection.png"><img src="examples/verified-20260915/02-reflection.png" alt="原创成年角色的橱窗反射实际生成样图" width="100%"></a></td>
+    <td width="33%"><a href="examples/verified-20260915/03-architecture-frame.png"><img src="examples/verified-20260915/03-architecture-frame.png" alt="原创成年角色在公共拱廊查看导览牌的实际生成样图" width="100%"></a></td>
+  </tr>
+</table>
+
+本次覆盖 19 种模式中的 3 种。角色外观相近，仍存在表情与细节差异，不代表严格身份锁定。[查看完整输入、提示词和逐图复核](examples/verified-20260915/README.md)。
 
 <a id="start"></a>
 
@@ -56,7 +74,7 @@ mode=reflection n=3 scene=雨后商业街
 仓库根目录的 Skill 安装到我的本地环境，保留 references 文件夹。
 ```
 
-仓库目前为私有，需要使用有访问权限的 GitHub 账号。也可以下载仓库，将文件夹命名为 `character-observer`，放到个人 Skills 目录，保持如下结构：
+仓库现已公开，可直接下载源码。也可以将下载的文件夹命名为 `character-observer`，放到个人 Skills 目录，保持如下结构：
 
 ```text
 ~/.agents/skills/character-observer/

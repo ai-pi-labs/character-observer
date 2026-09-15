@@ -15,6 +15,7 @@
 
 <p align="center">
   <a href="#start">Get started &amp; install</a> ·
+  <a href="#generated-examples">Generated examples</a> ·
   <a href="references/mode-examples.md">19 mode examples</a> ·
   <a href="#usage">Usage</a> ·
   <a href="SKILL.md">Skill source</a>
@@ -26,6 +27,23 @@ Describe an adult fictional character and get photography prompts across **19 ob
 
 - [Complete skill instructions](SKILL.md)
 - [All 19 modes: calls and complete image prompts](references/mode-examples.md)
+
+<a id="generated-examples"></a>
+
+## Actual generated examples
+
+Three views of an original fictional 28-year-old adult character: a phone snapshot, a shop-window reflection, and architectural framing. The second and third images used the first generated image as an actual character reference. All three were produced with an image-generation tool.
+
+<table>
+  <tr><th>Phone snapshot</th><th>Window reflection</th><th>Architectural framing</th></tr>
+  <tr>
+    <td width="33%"><a href="examples/verified-20260915/01-smartphone.png"><img src="examples/verified-20260915/01-smartphone.png" alt="Generated adult fictional character receiving a cup outside a café" width="100%"></a></td>
+    <td width="33%"><a href="examples/verified-20260915/02-reflection.png"><img src="examples/verified-20260915/02-reflection.png" alt="Generated shop-window reflection of the adult fictional character" width="100%"></a></td>
+    <td width="33%"><a href="examples/verified-20260915/03-architecture-frame.png"><img src="examples/verified-20260915/03-architecture-frame.png" alt="Generated adult fictional character reading a guide board in a public arcade" width="100%"></a></td>
+  </tr>
+</table>
+
+This sample covers 3 of the 19 modes. The character's appearance is similar across images, with differences in expression and details; strict identity preservation is not established. [Read the inputs, prompts, and image reviews](examples/verified-20260915/README.en.md).
 
 <a id="start"></a>
 
@@ -57,7 +75,7 @@ https://github.com/ai-pi-labs/character-observer
 into my local environment. Keep the references folder.
 ```
 
-This repository is private, so installation requires a GitHub account with access. You can also download the repository, name the folder `character-observer`, and place it in your personal skills directory. Keep the following files together:
+The repository is public, so you can download the source directly. Name the downloaded folder `character-observer` and place it in your personal skills directory. Keep the following files together:
 
 ```text
 ~/.agents/skills/character-observer/
